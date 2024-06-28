@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar cliente</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Almacenes</h1>
+    </header>
+    <div id="consultar-cliente">
+        <h2>Consultar Datos del Cliente</h2>
+        <form action="consultarclient" method="post">
+            <input type="hidden" name="id" value="${client.id}">
+            <label>Nombre:</label>
+            <input type="text" name="name" required>
+            <label>ID_Cliente:</label>
+            <input type="number" name="idc"  required>
+            <button type="submit">Consultar</button>
+        </form>
+    </div>
+</body>
+</html>
