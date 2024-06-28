@@ -1,1 +1,29 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Proveedor</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Almacenes</h1>
+    </header>
+    <div id="up-provedor">
+        <h2>Agregar Proveedor</h2>
+        <form action="upProvedor" method="post">
+            <input type="hidden" name="id" value="${proveedor.id}">
+            <label>Empresa:</label>
+            <input type="text" name="empresa" required>
+            <label>Producto:</label>
+            <input type="text" name="producto" required>
+            <label>Fecha Entrega:</label>
+            <input type="date" name="fecha" required>
+            <label>Cantidad Entregada:</label>
+            <input type="number" name="cantidad_ent" required>
+            <button type="submit">Entregar</button>
+        </form>
+    </div>
+</body>
+</html>
