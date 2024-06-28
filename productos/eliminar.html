@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Producto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Almacenes</h1>   
+    </header>
+    <div id="eliminar-producto">
+        <h2>Eliminar Producto</h2>
+        <form action="eliminarProduct" method="post">
+            <input type="hidden" name="id" >
+            <label>ID_Producto:</label>
+            <input type="number" name="idp" required>
+            <label>Nombre:</label>
+            <input type="text" name="name" required>
+            <button type="submit">Eliminar</button>   
+        </form>
+    </div>
+</body>
+</html>
