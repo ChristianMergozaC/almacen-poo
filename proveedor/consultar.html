@@ -1,1 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Proveedor</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Almacenes</h1>
+    </header>
+    <div id="up-provedor">
+        <h2>Consultar Datos del Proveedor</h2>
+        <form action="upProvedor" method="post">
+            <input type="hidden" name="id" value="${proveedor.id}">
+            <label>Empresa:</label>
+            <input type="text" name="empresa" required>
+            <label>ID_Cliente:</label>
+            <input type="number" name="idpr"  required>
+            <button type="submit">Consultar</button>
+        </form>
+    </div>
+</body>
+</html>
 
