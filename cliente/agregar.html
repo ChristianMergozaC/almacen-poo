@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar cliente</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Almacenes</h1>
+    </header>
+    <div id="up-cliente">
+        <h2>Agregar Cliente</h2>
+        <form action="upclient" method="post">
+            <input type="hidden" name="id" value="${client.id}">
+            <label>Nombre:</label>
+            <input type="text" name="name" required>
+            <label>Direccion:</label>
+            <input type="text" name="direccion"  required>
+            <label>Telefono:</label>
+            <input type="number" name="telefono" required>
+            <label>Email:</label>
+            <input type="text" name="email"  required>
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+</body>
